@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@700;800;900&display=swap');
+.bodoni-moda-bm {
+    font-family: "Bodoni Moda", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-optical-sizing: none;  
+}
+
+/* Marquee core */
+.marquee-track{
+  display:flex;
+  gap:var(--gap,2rem);
+  padding-inline:var(--gap,2rem);
+  overflow:hidden;
+  white-space:nowrap;
+  align-items:center;
+}
+.marquee-lane{
+  display:flex;
+  gap:var(--gap,2rem);
+  flex-shrink:0;
+  /* Typography to match reference */
+  font-weight:400;
+  letter-spacing:0.02em;
+  font-size:clamp(16px, 3.2vw, 28px);
+  line-height:1.1;
+  /* smooth edges on retina */
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+/* Animation: two lanes move together for a seamless loop */
+.dir-left{ animation: marquee-left var(--speed,18s) linear infinite; }
+.dir-right{ animation: marquee-right var(--speed,18s) linear infinite; }
+
+/* Pause on hover/focus for usability */
+.marquee-track:hover .marquee-lane,
+.marquee-track:focus-within .marquee-lane{
+  animation-play-state:paused;
+}
+
+/* Keyframes: move 50% because there are two identical lanes totaling 200% width */
+@keyframes marquee-left{
+  from{ transform: translateX(0%); }
+  to{   transform: translateX(-50%); }
+}
+@keyframes marquee-right{
+  from{ transform: translateX(-50%); }
+  to{   transform: translateX(0%); }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce){
+  .dir-left, .dir-right{ animation: none; }
+}
+
+
+@import "tailwindcss";
