@@ -29,7 +29,7 @@ export default function MarqueeBanner({
   return (
     <section
       className={[
-        "relative w-full overflow-hidden bg-black text-white",
+        "relative w-full wix-madefor-text overflow-hidden bg-black text-white",
         "select-none",
         className,
       ].join(" ")}

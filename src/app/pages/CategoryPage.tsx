@@ -87,11 +87,11 @@ export default async function CategoryPage({ params, searchParams }: PageProps) 
     );
 
     return (
-        <main className="min-h-screen bg-black text-white">
+        <main className="min-h-screen bg-black text-white ">
             <Header />
-            <section className="mx-auto max-w-[1450px] px-4 sm:px-6 lg:px-10 py-10 sm:py-14 lg:py-16">
+            <section className="mx-auto max-w-[1450px] px-4 sm:px-6 lg:px-10 py-10 sm:py-14 lg:py-16 wix-madefor-text">
                 <p className="mb-6 text-sm text-neutral-400">Home &gt; {pretty}</p>
-                <h1 className="text-[42px] sm:text-[56px] lg:text-[72px] leading-[1.05] font-[500]" style={{ fontFamily: "Bodoni Moda, serif" }}>
+                <h1 className="text-[42px] sm:text-[56px] lg:text-[72px] leading-[1.05] font-[500]">
                     {pretty}
                 </h1>
                 <p className="mt-4 max-w-3xl text-neutral-300">

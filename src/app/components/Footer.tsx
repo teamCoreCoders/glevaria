@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export default function Footer() {
     return (
-        <footer className="w-full bg-black text-white">
+        <footer className="w-full bg-black text-white wix-madefor-text">
             {/* Top grid: links + contact */}
             <div className="mx-auto max-w-[1400px] px-4 md:px-6 lg:px-8 py-10 md:py-14">
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 md:gap-10">
@@ -48,7 +48,7 @@ export default function Footer() {
                 {/* Big wordmark */}
                 <div className="pt-12 md:pt-16">
                     <div className="flex items-center justify-center">
-                        <span className="bodoni-moda-bm tracking-[0.35em] text-[40px] md:text-[80px] leading-none">
+                        <span className="fraunces-text tracking-[0.35em] text-[40px] md:text-[80px] leading-none">
                             GLEVERA
                         </span>
                     </div>
