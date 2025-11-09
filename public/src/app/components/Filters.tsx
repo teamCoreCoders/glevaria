@@ -94,8 +94,8 @@ export default function Filters() {
     const selectedShapes = getAll("shape");
 
     return (
-        <div className="space-y-8">
-            <h2 className="text-[28px]" style={{ fontFamily: "Bodoni Moda, serif" }}>
+        <div className="space-y-8 wix-madefor-text">
+            <h2 className="text-[28px] fraunces-text">
                 Filter By
             </h2>
 

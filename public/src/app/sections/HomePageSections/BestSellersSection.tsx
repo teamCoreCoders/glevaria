@@ -46,7 +46,7 @@ const CARDS: Card[] = [
 
 export default function BestSellersSection() {
     return (
-        <main className=" md:h-screen h-auto bg-black text-white">
+        <main className=" md:h- h-auto bg-black text-white">
             <section className="mx-auto max-w-[1700px] px-4 sm:px-6 lg:px-10 py-12 sm:py-16 lg:py-20">
                 <h1
                     className="select-none text-center md:text-left text-[42px] sm:text-[56px] lg:text-[84px] leading-none tracking-[-0.02em] font-[500]"

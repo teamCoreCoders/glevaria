@@ -29,7 +29,7 @@ export default function NewsletterModal({ open, onClose, onSubmit }: Props) {
         scheduleReopenRef.current = window.setTimeout(() => {
             setIsAutoOpen(true);
             scheduleReopenRef.current = null;
-        }, 30000);
+        }, 40000);
     };
 
     // Lock scroll when open
@@ -81,7 +81,7 @@ export default function NewsletterModal({ open, onClose, onSubmit }: Props) {
     };
 
     return (
-        <div aria-hidden={false} className="fixed inset-0 z-[1000]">
+        <div aria-hidden={false} className="fixed inset-0 z-[1000] wix-madefor-text">
             <div className="absolute inset-0 bg-black/50" onClick={handleClose} />
             <FocusTrap>
                 <div

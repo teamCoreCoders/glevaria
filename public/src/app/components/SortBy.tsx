@@ -20,7 +20,7 @@ export default function SortBy() {
     );
 
     return (
-        <label className="text-sm text-neutral-300">
+        <label className="text-sm text-neutral-300 wix-madefor-text">
             Sort By:&nbsp;
             <select
                 value={current}

@@ -229,7 +229,7 @@ function MobileDrawer({
                 aria-hidden={!open}
             >
                 <div className="flex items-center justify-between px-4 py-3 border-b border-white/10">
-                    <span className="text-2xl bodoni-moda-bm">GLEVERA</span>
+                    <span className="text-2xl fraunces-text">GLEVERA</span>
                     <button aria-label="Close menu" onClick={onClose} className="p-2">
                         <IoClose className="w-6 h-6" />
                     </button>
@@ -401,7 +401,7 @@ export default function Header() {
     };
 
     return (
-        <header className="bg-black">
+        <header className="bg-black wix-madefor-text">
             {/* First row */}
             <div className="max-w-[1400px] mx-auto flex justify-between items-center px-4 py-2">
                 {/* Search left (desktop) */}
@@ -410,11 +410,11 @@ export default function Header() {
                     <input
                         type="text"
                         placeholder="Search"
-                        className="bg-black text-[#F7F5EF] placeholder-[#F7F5EF] w-24 md:w-30 outline-none text-md"
+                        className="bg-black text-[#F7F5EF]  placeholder-[#F7F5EF] w-24 md:w-30 outline-none text-md"
                     />
                 </div>
                 {/* Free shipping text right */}
-                <div className="text-[#F7F5EF] text-sm px-2 py-1">Free shipping on all orders Worldwide</div>
+                <div className="text-[#F7F5EF] text-sm px-2 py-1 ">Free shipping on all orders Worldwide</div>
             </div>
 
             {/* Second row */}
@@ -422,12 +422,12 @@ export default function Header() {
                 <div className="flex items-center justify-between">
                     {/* Logo left */}
                     <div className="px-2">
-                        <span className="text-white text-2xl md:text-5xl bodoni-moda-bm">GLEVERA</span>
+                        <span className="text-white text-2xl md:text-5xl fraunces-text">GLEVERA</span>
                     </div>
 
                     {/* Navigation center (desktop only) */}
                     <nav className="hidden lg:flex justify-center">
-                        <ul className="flex flex-wrap justify-center md:gap-5 text-[#F7F5EF] text-lg px-2 py-1">
+                        <ul className="flex  flex-wrap justify-center md:gap-5 text-[#F7F5EF] text-lg px-2 py-1">
                             <li>
                                 <CollectionMenu />
                             </li>
