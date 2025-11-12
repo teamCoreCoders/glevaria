@@ -123,17 +123,17 @@ function CollectionMenu() {
             <button
                 type="button"
                 onClick={() => setOpen((v) => !v)}
-                className="flex items-center gap-1 focus:outline-none"
+                className="flex items-center gap-1 focus:outline-none hover:underline"
                 aria-haspopup="true"
                 aria-expanded={open}
             >
-                Collection
+                Collections
                 <MdKeyboardArrowDown className={`w-4 h-4 transition-transform ${open ? 'rotate-180' : ''}`} />
             </button>
 
             {open && (
                 <div className="absolute left-[350px] -translate-x-1/2 top-[50px] w-screen z-40">
-                    <div className="mx-auto max-w-[1400px] bg-[#F3EFEB] text-black shadow-xl ring-1 ring-black/10">
+                    <div className="mx-auto max-w-[2000px] bg-[#F3EFEB] text-black shadow-xl ring-1 ring-black/10">
                         <div className="flex items-start gap-8 px-10 py-1">
                             <div className="shrink-0 pt-1 min-w-[120px]">
                                 <p className="text-lg tracking-wide text-black">Collection</p>
@@ -302,9 +302,9 @@ function MobileDrawer({
                         </li>
 
                         {/* Currency (compact) */}
-                        <li className="px-3 pt-1">
+                        {/* <li className="px-3 pt-1">
                             <CurrencyMenu compact />
-                        </li>
+                        </li> */}
                     </ul>
                 </nav>
             </aside>
@@ -403,7 +403,7 @@ export default function Header() {
     return (
         <header className="bg-black wix-madefor-text">
             {/* First row */}
-            <div className="max-w-[1400px] mx-auto flex justify-between items-center px-4 py-2">
+            <div className="max-w-[2500px] mx-auto flex justify-between items-center px-4 py-2">
                 {/* Search left (desktop) */}
                 <div className="hidden lg:flex items-center gap-2">
                     <FiSearch className="text-[#F7F5EF] w-5 h-5" />
@@ -413,12 +413,17 @@ export default function Header() {
                         className="bg-black text-[#F7F5EF]  placeholder-[#F7F5EF] w-24 md:w-30 outline-none text-md"
                     />
                 </div>
+                <div className="items-left gap-2 lg:hidden">
+                    <button aria-label="Toggle search" onClick={() => setShowSearch((v) => !v)} className="p-1">
+                        <FiSearch className="w-5 h-5" />
+                    </button>
+                </div>
                 {/* Free shipping text right */}
                 <div className="text-[#F7F5EF] text-sm px-2 py-1 ">Free shipping on all orders Worldwide</div>
             </div>
 
             {/* Second row */}
-            <div className="max-w-[1400px] mx-auto px-4 py-3 relative">
+            <div className="max-w-[2500px] mx-auto px-4 py-3 relative">
                 <div className="flex items-center justify-between">
                     {/* Logo left */}
                     <div className="px-2">
@@ -461,14 +466,12 @@ export default function Header() {
                                     Contact
                                 </Link>
                             </li>
-                            <li className="px-2">
-                                <CurrencyMenu />
-                            </li>
                         </ul>
                     </nav>
 
                     {/* Right icons desktop */}
                     <div className="hidden lg:flex justify-end items-center gap-4 text-[#F7F5EF] px-2 py-1">
+                        <CurrencyMenu />
                         <MdOutlineFavoriteBorder className="w-6 h-6 cursor-pointer" />
                         <CgShoppingCart onClick={() => setCartOpen(true)} className="w-6 h-6 cursor-pointer" />
                         <CgProfile className="w-6 h-6 cursor-pointer" />
@@ -476,9 +479,7 @@ export default function Header() {
 
                     {/* Mobile / Tablet actions: icons + hamburger on the right */}
                     <div className="flex lg:hidden items-center gap-2 text-[#F7F5EF] ml-auto">
-                        <button aria-label="Toggle search" onClick={() => setShowSearch((v) => !v)} className="p-1">
-                            <FiSearch className="w-5 h-5" />
-                        </button>
+                        <CurrencyMenu />
                         <button aria-label="Wishlist" className="p-1">
                             <MdOutlineFavoriteBorder className="w-6 h-6" />
                         </button>

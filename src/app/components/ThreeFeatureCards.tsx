@@ -8,9 +8,9 @@ type Card = {
 };
 
 const CARDS: Card[] = [
-    { title: "Best Sellers", src: "/images/card-1.png", alt: "Best sellers diamond ring" },
-    { title: "New In", src: "/images/card-2.png", alt: "New in diamond necklace" },
-    { title: "gift of love", src: "/images/card-3.png", alt: "Gift of love diamond earrings" },
+    { title: "New In", src: "/images/ni.png", alt: "New in diamond necklace" },
+    { title: "Best Sellers", src: "/images/bs6-h.png", alt: "Best sellers diamond ring" },
+    { title: "gift of love", src: "/images/gol.png", alt: "Gift of love diamond earrings" },
 ];
 
 export default function ThreeFeatureCards() {
@@ -33,15 +33,11 @@ export default function ThreeFeatureCards() {
                             </div>
 
                             {/* Title below image */}
-                            <h3
-                                className="md:mt-20 mt-5 text-center font-bold tracking-wide"
-                                style={{
-                                    fontFamily: "Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif",
-                                    fontSize: "clamp(2.15rem, 2.2vw, 1.6rem)",
-                                }}
+                            <h1
+                                className="md:mt-20 mt-5 text-center font-bold fraunces-text tracking-[-3px] md:tracking-[-5px] text-5xl"
                             >
                                 {c.title}
-                            </h3>
+                            </h1>
                         </article>
                     ))}
                 </div>

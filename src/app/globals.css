@@ -1,5 +1,7 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@700;800;900&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,700;1,6..96,700&family=Devonshire&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,700;1,6..96,700&family=Devonshire&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz@0,6..96;1,6..96&family=Devonshire&family=Fraunces:ital,opsz,wght@0,9..144,200;1,9..144,200&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Wix+Madefor+Text:ital@0;1&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz@0,6..96;1,6..96&family=Devonshire&family=Fraunces:ital,opsz,wght,WONK@0,9..144,200,1;1,9..144,200,1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Wix+Madefor+Text:ital@0;1&display=swap');
 
 /* .bodoni-moda-bm {
   font-family: "Bodoni Moda";
@@ -8,23 +10,22 @@
   font-style: normal;
 } */
 
-.bodoni-moda-bm {
+/* .bodoni-moda-bm {
   font-family: "Bodoni Moda", serif;
   font-optical-sizing: auto;
   font-weight: 100;
   font-style: normal;
-}
+} */
 
 .fraunces-text {
   font-family: "Fraunces", serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 200;
   font-style: normal;
   font-variation-settings:
     "SOFT" 0,
     "WONK" 0;
 }
-
 
 .wix-madefor-text{
   font-family: "Wix Madefor Text", sans-serif;

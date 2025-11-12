@@ -29,7 +29,7 @@ export default function MarqueeBanner({
   return (
     <section
       className={[
-        "relative w-full wix-madefor-text overflow-hidden bg-black text-white",
+        "relative w-full overflow-hidden bg-black text-white",
         "select-none",
         className,
       ].join(" ")}
@@ -46,9 +46,9 @@ export default function MarqueeBanner({
         <div className={`marquee-lane ${direction === "right" ? "dir-right" : "dir-left"}`}>
           {items}
         </div>
-        <div aria-hidden className={`marquee-lane ${direction === "right" ? "dir-right" : "dir-left"}`}>
+        {/* <div aria-hidden className={`marquee-lane ${direction === "right" ? "dir-right" : "dir-left"}`}>
           {items}
-        </div>
+        </div> */}
       </div>
     </section>
   );

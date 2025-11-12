@@ -48,7 +48,7 @@ export default function Footer() {
                 {/* Big wordmark */}
                 <div className="pt-12 md:pt-16">
                     <div className="flex items-center justify-center">
-                        <span className="fraunces-text tracking-[0.35em] text-[40px] md:text-[80px] leading-none">
+                        <span className="fraunces-text tracking-[15px] md:tracking-[25px] text-[40px] md:text-[80px] leading-none">
                             GLEVERA
                         </span>
                     </div>
@@ -68,15 +68,15 @@ export default function Footer() {
 
                     {/* Copyright */}
                     <div className="text-xs text-white/60">
-                        © 2035 by Grandeur. Built on{' '}
-                        <a
+                        © 2025 Grandeur. All rights reseverd.
+                        {/* <a
                             href="https://www.wix.com/studio"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="underline hover:no-underline"
                         >
                             Wix Studio
-                        </a>
+                        </a> */}
                     </div>
                 </div>
             </div>

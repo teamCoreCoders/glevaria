@@ -16,7 +16,7 @@ export default function Hero() {
             {/* Content */}
             <div className="relative z-10 mx-auto grid min-h-screen w-full max-w-7xl place-items-center px-6">
                 <div className="text-center">
-                    <h1 className="mb-[400] fraunces-text text-white text-5xl sm:text-6xl md:text-7xl leading-[0.95] tracking-[0.04em]">
+                    <h1 className="mb-[400] text-white text-5xl sm:text-6xl md:text-7xl lg:text-8xl leading-none fraunces-text tracking-[-5px] md:tracking-[-10px]">
                         Vibrant. Sustainable. Timeless.
                     </h1>
 

@@ -21,14 +21,14 @@ export default function HomePage() {
 
         <main className="bg-black text-white wix-madefor-text">
             <Header />
-            <NewsletterModal
+            {/* <NewsletterModal
                 open={open}
                 onClose={() => setOpen(false)}
                 onSubmit={(data) => {
                     // TODO: integrate with Firestore/Mailchimp/etc.
                     console.log(data);
                 }}
-            />
+            /> */}
             <HeroSection />
             <BestSellersSection />
             <VerticalCarousel />
@@ -38,9 +38,9 @@ export default function HomePage() {
                     text="New Arrivals Every Week"
                     repeat={12}
                     speedSec={16}
-                    gapRem={0.8}
+                    gapRem={0.5}
                     direction="left"
-                    className="py-3" /* thin band like screenshot */
+                    className="py-3 fraunces-text" /* thin band like screenshot */
                 />
             </main>
             <ThreeFeatureCards />
